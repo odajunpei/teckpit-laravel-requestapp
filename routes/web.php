@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/greeting', 'GreetingController@index');
+Route::post('/greeting/welcome', 'GreetingController@welcome');
+Route::get('/greeting/hello', 'GreetingController@hello');
